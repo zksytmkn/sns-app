@@ -31,7 +31,7 @@ export const putImage = async (dataUrl: string, pathname: string) => {
   const file = dataURLtoBuffer(dataUrl);
 
   const uploadParams: PutObjectCommandInput = {
-    Bucket: "next-demo",
+    Bucket: "sns-app",
     Key: pathname,
     Body: file,
     ContentType: "image/png",
@@ -46,7 +46,7 @@ export const putImage = async (dataUrl: string, pathname: string) => {
 
 export const deleteImage = async (pathname: string) => {
   const uploadParams: DeleteObjectCommandInput = {
-    Bucket: "next-demo",
+    Bucket: "sns-app",
     Key: pathname,
   };
 
