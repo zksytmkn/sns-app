@@ -8,8 +8,8 @@ import { faker } from "@faker-js/faker";
 export default async function UserForm({ editMode }: { editMode?: boolean }) {
   const defaultValue = editMode
     ? {
-        name: (await currentUser()).name,
-        profileImageURL: (await currentUser()).profileImageURL,
+        name: (await currentUser())?.name,
+        profileImageURL: (await currentUser())?.profileImageURL,
       }
     : {
         name: faker.internet.userName(),

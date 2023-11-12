@@ -22,7 +22,7 @@ export const currentUser = cache(async () => {
   });
 
   if (!user) {
-    throw new Error("User not found");
+    return null;
   }
 
   return user;
