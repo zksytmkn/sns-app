@@ -12,7 +12,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "pub-074144cb22fa494fb2c6a9e4562739d6.r2.dev",
+        hostname: new URL(process.env.IMAGE_HOST_URL).hostname,
       },
       {
         protocol: "https",

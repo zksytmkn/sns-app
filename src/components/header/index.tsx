@@ -2,7 +2,7 @@ import { AppConfig } from "@/app.config";
 import { currentUser } from "@/actions/user";
 import UserMenu from "@/components/header/user-menu";
 import { Button } from "@/components/ui/button";
-import { SignInButton, SignUpButton, SignedIn, SignedOut } from "@clerk/nextjs";
+import { SignInButton, SignUpButton, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default async function Header() {
