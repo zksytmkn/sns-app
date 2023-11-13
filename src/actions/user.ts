@@ -39,7 +39,7 @@ export const createUser = async (formData: FormData) => {
     id,
   };
 
-  const profileImageDataURL = formData.get("profileImage") as string;
+  const profileImageDataURL = formData.get("profileImageURL") as string;
 
   if (profileImageDataURL) {
     data.profileImageURL = await putImage(profileImageDataURL, `users/${id}/avatar.png`);
